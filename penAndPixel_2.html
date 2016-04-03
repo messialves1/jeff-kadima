@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>animate</title>
+  <style>
+  div {
+	  background-image:url(images/stars2.jpg);
+	  
+	background-color: #FFFFFF;
+    width: 200px;
+    height: 1.1em;
+    text-align: center;
+    border: 1px solid red;
+    margin: 3px;
+    font-size: 14px;
+	
+  }
+  button {
+	  background-image:url(images/stars2.jpg);
+	  
+	  color:#196578;
+    font-size: 20px;
+	border-left-color:#2FB2D3;
+  }
+  
+  body {
+	  background-image:url(images/Art_2.jpg);
+	 
+  }
+  
+ nav {
+	 
+	 font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+	font-style:italic;
+    font-weight: bold;
+	font-size:67px;
+	position:relative;
+    -webkit-animation: go 5s infinite; 
+    animation: go 5s infinite;
+}
+
+#nav1 {animation-timing-function: linear;}
+#nav2 {animation-timing-function: ease;}
+#nav3 {animation-timing-function: ease-in;}
+#nav4 {animation-timing-function: linear;}
+#nav5 {animation-timing-function: ease;}
+#nav6 {animation-timing-function: ease-in;}
+#nav7 {animation-timing-function:ease;}
+
+
+@-webkit-keyframes go {
+    from {left: 0px;}
+    to {left: 900px;}
+} 
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="jquery/js/jquery-1.4.4.min.js"></script>
+
+
+<title>Click Url</title>
+        <script src="http://code.jquery.com/jquery-latest.js"     
+        type="text/javascript"></script>
+            <script type="text/javascript">
+                $(function() {
+                    $("#Button1").click(function() {
+                        $("#an1").click();
+                    });
+                });
+		</script>	
+        
+        <script type="text/javascript">
+                $(function() {
+                    $("#Button3").click(function() {
+                        $("#an2").click();
+                    });
+                });
+		</script>			
+				
+    
+		
+        
+		
+		
+		
+		
+     
+  
+    
+   
+</head>
+<body>
+ 
+<button id="go1">&raquo; Gallery <a href="gallery.html" id="an1">Go</a></button>
+
+<button id="go4">&raquo; Reset </button>
+<button id="go7">&raquo; Contact<a href="Contact.html" id="an2">Go</a></button>
+
+<div id="block1">You're about to be taken to our Gallery click "go"</div>
+
+<div id="block7">we're guiding you to our contact page click "go"</div>
+<div id="my-link"></div> 
+<nav id="nav1">Pen</nav>
+<nav id="nav2">&</nav>
+<nav id="nav3">Pixel</nav>
+<nav id="nav4">2</nav>
+<nav id="nav5">0</nav>
+<nav id="nav6">1</nav>
+<nav id="nav7">6</nav>
+<script>
+$( "#go1" ).click(function() {
+  $( "#block1" )
+    .animate({
+      width: "90%"
+    }, {
+      queue: false,
+      duration: 3000
+    })
+    .animate({ fontSize: "24px" }, 1500 )
+    .animate({ borderRightWidth: "15px" }, 1500 );
+	
+});
+ 
+$( "#go2" ).click(function() {
+  $( "#block2" )
+    .animate({ width: "90%" }, 1000 )
+    .animate({ fontSize: "24px" }, 1000 )
+    .animate({ borderLeftWidth: "15px" }, 1000 );
+});
+
+$("#go7").click(function() {
+	$("#block7")
+	.animate({ width: "100%" }, 1100 )
+	.animate({ fontSize: "27px" }, 1000 )
+	.animate({borderLeftWidth: "15px" }, 1000);
+});
+ 
+
+ 
+$( "#go4" ).click(function() {
+  $( "div" ).css({
+    width: "",
+    fontSize: "",
+    borderWidth: ""
+  });
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>
+ 
+
+
